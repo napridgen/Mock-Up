@@ -1,0 +1,80 @@
+body {
+  background-color: aquamarine;
+}
+/* Side Bar */
+#sidebar {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 150px;
+  padding: 21px 25px;
+  background-color: #352418;
+  z-index: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#sidebar-backdrop {
+  opacity: 0.5;
+}
+
+#nav-sidebar {
+  display: block;
+  display: flex;
+  align-items: flex-end;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#nav-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  font-size: x-small;
+  color: white;
+  border-color: aquamarine;
+  word-spacing: 4px;
+}
+
+#sign-up {
+  align-items: center;
+  display: block;
+  border-color: white;
+  border-radius: 10px;
+  background-color: #352418;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+
+#sign-in {
+  margin: auto;
+  margin-left: 22px;
+  background-color: #352418;
+  border: 10px;
+  color: white;
+}
+
+#sign-in:hover {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 25px;
+  color: white;
+}
