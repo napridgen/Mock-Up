@@ -86,12 +86,8 @@ ul {
   object-fit: contain;
 }
 
-body {
-  margin: 0%;
-}
-
 .sheet-grid {
-  --gap: 16px;
+  --gap: 22px;
   --num-cols: 4;
   --row-height: 300px;
 
@@ -112,9 +108,10 @@ body {
 }
 
 video {
-  width: 100%;
-  height: auto;
+  width: 900px;
+  height: 100%;
+  padding-right: ;
 
-  /* opacity: 0.5; */
+  opacity: 0.5;
   z-index: -100;
 }
