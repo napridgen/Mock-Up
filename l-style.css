@@ -78,3 +78,38 @@ ul {
   padding-left: 25px;
   color: white;
 }
+
+/* grid items */
+
+.photo {
+  object-fit: contain;
+}
+
+body {
+  margin: 0%;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-flow: var(--row-height);
+  gap: var(--gap);
+  padding-left: 50px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item-1 {
+  /* grid-column: 1/3; */
+}
