@@ -16,10 +16,6 @@ body {
   z-index: 100;
 }
 
-#sidebar-backdrop {
-  opacity: 0.5;
-}
-
 #nav-sidebar {
   display: block;
   display: flex;
@@ -40,7 +36,7 @@ li {
   bottom: 10px;
   width: 50%;
   font-size: x-small;
-  color: white;
+  color: yellow;
   border-color: aquamarine;
   word-spacing: 4px;
 }
@@ -52,6 +48,20 @@ li {
   border-radius: 10px;
   background-color: #352418;
   color: white;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+
+#sign-up:hover {
+  align-items: center;
+  display: block;
+  border-color: white;
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
   padding: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -82,41 +92,58 @@ ul {
 
 /* grid items */
 
-.photo {
+/* .photo {
   object-fit: contain;
-}
+} */
 
 .sheet-grid {
-  --gap: 22px;
+  /* --gap: 22px;
   --num-cols: 4;
   --row-height: 300px;
 
   box-sizing: border-box;
-  padding: var(--gap);
-
+  padding: var(--gap); */
   display: grid;
-  grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-flow: var(--row-height);
-  gap: var(--gap);
-  padding-left: 200px;
+  /* grid-template-columns: repeat(var(--num-cols), 1fr); */
+  grid-template-columns: 200px 250px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  position: relative;
+  display: flex;
 }
 
-.sheet-grid img {
+#sheet-grid img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 video {
-  width: 900px;
-  height: 100%;
-  opacity: 0.5;
-  z-index: -100;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 12px;
+  position: absolute;
+  top: 0%;
+  width: 1305px;
 }
 
 .grid-section-3 {
   display: flex;
-  position: relative;
-  width: 50%;
+  position: absolute;
+  justify-content: space-between;
   bottom: 0;
+  width: 60%;
+}
+
+.grid-section-2 {
+  border-style: solid;
+  border-color: yellow;
+  position: absolute;
+  size: 10px;
+  top: 0;
+  right: 0;
+  width: 461px;
+  height: auto;
+  margin: auto;
 }
